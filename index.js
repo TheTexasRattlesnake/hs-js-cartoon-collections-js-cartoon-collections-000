@@ -1,7 +1,7 @@
 function dwarfRollCall(dwarves) {
   var array = []
-  var num = 0
-  for (num = 0; num < dwarves.length; num++) {
+  
+  for (var num = 0; num < dwarves.length / 2; num++) {
     array.push(`${num+1}. ${dwarves[num]}`)
   }
   return array.toString().replace(/,/g, ' ')
@@ -33,4 +33,13 @@ function findTheCheese (foods) {
       }
   }
   return 'no cheese!'
+}
+
+function startsWithB(words) {
+  var array = []
+  for (var i=0;i<words.length;i++) {
+    if (words[i] === 'B' || 'b')
+    array.push(words[i])
+  }
+  return array
 }
