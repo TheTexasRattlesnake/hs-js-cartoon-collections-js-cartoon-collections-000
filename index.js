@@ -1,7 +1,6 @@
 function dwarfRollCall(dwarves) {
   var array = []
-  
-  for (var num = 0; num < dwarves.length / 2; num++) {
+  for (var num = 0; num < dwarves.length; num++) {
     array.push(`${num+1}. ${dwarves[num]}`)
   }
   return array.toString().replace(/,/g, ' ')
